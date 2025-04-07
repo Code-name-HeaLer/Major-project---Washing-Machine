@@ -1,0 +1,21 @@
+Anomaly Detection Report
+==============================
+Loaded model: gcn_transformer_best.pt (Assumed trained on healthy only)
+Loaded graph data: graph_structure.pkl (Assumed built on healthy only)
+Using device: cuda
+Signal Scaling: Applied (from healthy train)
+Threshold Method Used: QUANTILE (Based on 40 healthy validation samples)
+Anomaly Threshold: 0.044589
+Test Set Size: 322
+Predicted Anomalies in Test Set: 88/322
+
+--- Performance Metrics ---
+Accuracy:  0.9503
+Precision: 0.9886
+Recall:    0.8529
+F1 Score:  0.9158
+Confusion Matrix:
+[[219   1]
+ [ 15  87]]
+
+Total Anomaly Detection Time: 59.99 seconds
